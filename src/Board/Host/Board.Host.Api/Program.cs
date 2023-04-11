@@ -1,3 +1,5 @@
+using Microsoft.OpenApi.Models;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -5,11 +7,11 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen(options =>
+builder.Services.AddSwaggerGen( options =>
 {
-    options.SwaggerDoc("v1", new OpenApiInfo { TypeInitializationException ="Post Api", Version = "V1"});
+    options.SwaggerDoc("v1", new OpenApiInfo { Title ="Post Api", Version = "V1"});
     options.IncludeXmlComments(Path.Combine(Path.Combine(AppContext.BaseDirectory, 
-    $"{typeof(CreatePostDto).Assembly.GetName().Name}.xml")));
+    $"{typeof(Board.Contracts.Posts.CreatePostDto).Assembly.GetName().Name}.xml")));
     options.IncludeXmlComments(Path.Combine(Path.Combine(AppContext.BaseDirectory, "Documentation.xml")));
 });
 

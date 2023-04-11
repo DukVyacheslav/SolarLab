@@ -23,7 +23,7 @@
         </member>
         <member name="M:Board.Host.Api.Controllers.PostsController.CreatePost(Board.Contracts.Posts.CreatePostDto)">
             <summary>
-            Сохраняетновое объявление
+            Сохраняет новое объявление
             </summary>
             <param name="model"> Модель создания объявления </param>
             <returns> Модель созданного объявления </returns>

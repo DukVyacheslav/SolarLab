@@ -36,7 +36,7 @@ public class PostsController:ControllerBase
     }
 
     /// <summary>
-    /// Сохраняетновое объявление
+    /// Сохраняет новое объявление
     /// </summary>
     /// <param name="model"> Модель создания объявления </param>
     /// <returns> Модель созданного объявления </returns>
