@@ -29,6 +29,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Board.Infrastructure", "src
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Board.Infrastructure.DataAccess", "src\Board\Infrastructure\Board.Infrastructure.DataAccess\Board.Infrastructure.DataAccess.csproj", "{876868C0-F46D-4CD1-B156-B93F22FFCA64}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Board.Host.Api", "src\Board\Host\Board.Host.Api\Board.Host.Api.csproj", "{D5F5F308-85B7-49EF-9FC6-EDB1DB7AA207}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -58,6 +60,10 @@ Global
 		{876868C0-F46D-4CD1-B156-B93F22FFCA64}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{876868C0-F46D-4CD1-B156-B93F22FFCA64}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{876868C0-F46D-4CD1-B156-B93F22FFCA64}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D5F5F308-85B7-49EF-9FC6-EDB1DB7AA207}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5F5F308-85B7-49EF-9FC6-EDB1DB7AA207}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5F5F308-85B7-49EF-9FC6-EDB1DB7AA207}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5F5F308-85B7-49EF-9FC6-EDB1DB7AA207}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{23418AEE-D160-4615-AE08-9D03AAEE8A65} = {33FD560F-3014-4FEE-A290-9B949CFDC14B}
@@ -72,5 +78,6 @@ Global
 		{34CB1B45-68FB-404A-8B4B-CA4CCE3C1165} = {7301CF28-7FEB-45C6-9A39-2B6C5C62D08F}
 		{899A0D73-5B30-4069-906F-BB50870F7E6E} = {23418AEE-D160-4615-AE08-9D03AAEE8A65}
 		{876868C0-F46D-4CD1-B156-B93F22FFCA64} = {23418AEE-D160-4615-AE08-9D03AAEE8A65}
+		{D5F5F308-85B7-49EF-9FC6-EDB1DB7AA207} = {D5FE0B8D-6905-4367-B035-0F5CE8A53F0F}
 	EndGlobalSection
 EndGlobal
