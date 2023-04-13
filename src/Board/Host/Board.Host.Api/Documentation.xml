@@ -9,11 +9,12 @@
             Контроллер для работы с объявлениями
             </summary>
         </member>
-        <member name="M:Board.Host.Api.Controllers.PostsController.#ctor(Microsoft.Extensions.Logging.ILogger{Board.Host.Api.Controllers.PostsController})">
+        <member name="M:Board.Host.Api.Controllers.PostsController.#ctor(Microsoft.Extensions.Logging.ILogger{Board.Host.Api.Controllers.PostsController},Board.Application.AppData.Contexts.Posts.Services.IPostService)">
             <summary>
             Инициализирует экземпляр <see cref="T:Board.Host.Api.Controllers.PostsController"/>
             </summary>
             <param name="logger"> Сервис логирования </param>
+            <param name="postService"> Сервис для работы с объявлениями </param>
         </member>
         <member name="M:Board.Host.Api.Controllers.PostsController.Get">
             <summary>
@@ -21,11 +22,12 @@
             </summary>
             <returns></returns>
         </member>
-        <member name="M:Board.Host.Api.Controllers.PostsController.CreatePost(Board.Contracts.Posts.CreatePostDto)">
+        <member name="M:Board.Host.Api.Controllers.PostsController.CreatePost(Board.Contracts.Posts.CreatePostDto,System.Threading.CancellationToken)">
             <summary>
             Сохраняет новое объявление
             </summary>
-            <param name="model"> Модель создания объявления </param>
+            <param name="dto"> Модель создания объявления </param>
+            <param name="cancellation"> Отмена операции </param>
             <returns> Модель созданного объявления </returns>
         </member>
     </members>

@@ -1,5 +1,5 @@
 using Board.Application.AppData.Contexts.Posts.Services;
-using  Board.Contracts.Posts;
+using Board.Contracts.Posts;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 
@@ -50,7 +50,8 @@ public class PostsController:ControllerBase
     {
         _logger.LogInformation(message:$"{JsonConvert.SerializeObject(dto)}");
 
-        var result:CreatePostDto = await _postService.AddPost(dto, cancellation);
+        var result = await _postService.AddPost(dto, cancellation);
+
         return await Task.Run( function:() => Created(uri:string.Empty, result));
     }
 }
