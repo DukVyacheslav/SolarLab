@@ -22,6 +22,7 @@ public class PostService : IPostService
     private bool IsValid(CreatePostDto dto)
     {
         // Логика валидации
+        
         return true;
     }
 }
